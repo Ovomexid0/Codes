@@ -90,17 +90,14 @@ def main():
     faxineiro = Faxineiro("Maria", "98765432100", "Noturno")
     estagiario = Estagiario("João", "11122233344", 20)
 
-    # Testando os métodos do gerente
     print(gerente.info_funcionario())
     gerente.bonus()
     print("Salário após bônus:", gerente.get_salario())
     
-    # Testando os métodos do faxineiro
     print(faxineiro.info_funcionario())
     faxineiro.bonus()
     print("Salário após bônus:", faxineiro.get_salario())
 
-    # Testando os métodos do estagiário
     print(estagiario.info_funcionario())
     estagiario.bonus()
     print("Salário após bônus:", estagiario.get_salario())
