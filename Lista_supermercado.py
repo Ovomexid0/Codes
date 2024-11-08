@@ -1,6 +1,5 @@
 from abc import ABC, abstractmethod
 
-# Interface Supermercado
 class Supermercado(ABC):
     @abstractmethod
     def add(self, item):
@@ -14,10 +13,9 @@ class Supermercado(ABC):
     def delete(self, index):
         pass
 
-# Implementação de Supermercado Array
 class SupermercadoArray(Supermercado):
     def __init__(self):
-        self.items = []  # Lista sem limite de tamanho
+        self.items = []  
 
     def add(self, item):
         self.items.append(item)
@@ -39,7 +37,6 @@ class SupermercadoArray(Supermercado):
         else:
             print(f"Erro: índice inválido ({index + 1})")
 
-# Função principal de execução
 def main():
     supermercado = SupermercadoArray()
 
